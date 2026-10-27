@@ -1,0 +1,8 @@
+Use case: ads-marketing
+Asset type: public GitHub product cover, wide horizontal 1536 by 1024 composition with all content within a central 1536 by 768 safe area.
+Primary request: create a restrained editorial cover for the existing ZYN.STORE ecommerce product and its companion ZynBoard management dashboard.
+Actual brand references from implementation: storefront uses near-black zinc (#09090b), white, vivid lime #9ae600, heavy tightly tracked uppercase sans-serif type. Dashboard uses dark navy #0e1015 and violet #7c5cfc with rounded details.
+Scene: premium matte charcoal background, subtle paper grain, a precise thin lime rule and one small violet connector line suggesting two linked workspaces. Abstract folded textile-like geometric planes on the right, no garments with logos, no photographs.
+Text verbatim: "ZYN.STORE" in large bold white uppercase sans-serif, below "Storefront + ZynBoard" in smaller readable white text. Small understated label "PRODUCT OVERVIEW".
+Composition: generous negative space, typography on left, abstract geometric textile planes on right, limited color accents, clean readability at README width.
+Constraints: this is abstract promotional artwork, not an interface screenshot. No UI panels, no browser windows, no charts, no fake features, no numerical claims, no badges, no external logos, no contact information, no watermarks. Do not invent or draw an app interface.

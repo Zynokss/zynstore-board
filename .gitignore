@@ -1,0 +1,9 @@
+# Public product materials only. Add files through the reviewed allowlist.
+.env
+.env.*
+*.pem
+*.key
+node_modules/
+*.log
+*.map
+.DS_Store
