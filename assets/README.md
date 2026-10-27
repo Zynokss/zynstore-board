@@ -1,19 +1,21 @@
-# Product media
+# Showcase media
 
 | File | Origin and purpose |
 | --- | --- |
-| `zynstore-cover.jpg` | AI-generated abstract product cover. Charcoal, lime and violet are based on the current storefront and dashboard styles. It depicts no application interface. |
-| `storefront-demo.png` | Actual rendered storefront catalog using four sample products and neutral image placeholders. |
-| `dashboard-demo.png` | Actual rendered dashboard home using a fictional Demo Operator, sample products and zero orders. |
+| `zynstore-cover.jpg` | AI-generated abstract cover using the existing charcoal, lime and violet palette. It is promotional artwork, not an interface screenshot. |
+| `storefront-demo.png` | Actual storefront catalog rendered with four sample products and neutral image placeholders. |
+| `dashboard-demo.png` | Actual dashboard home rendered with a fictional Demo Operator, sample products and zero orders. |
 
-## Screenshot method
+## Screenshot provenance
 
-A fresh desktop Chromium context loaded each hosted website. Before navigation, capture rules intercepted API requests and supplied isolated demo responses; non-GET requests were blocked. A synthetic session existed only in that disposable browser to render the dashboard. It did not authenticate to the live service. No personal browser profile, customer account, database seed or production record was used.
+Each hosted website was loaded in a fresh desktop Chromium context. API requests were intercepted before navigation and answered with isolated demo data. Non-GET requests were blocked. A synthetic session existed only in the disposable capture browser to render the dashboard; no live account was authenticated.
 
-Product photography and avatar requests were replaced with neutral placeholders. The added bottom caption identifies the isolated demo. The layout and controls are rendered by the actual applications. Interface status text such as online/sync indicators is not an independent uptime or telemetry verification. Demo prices, quantities and products are not offers or evidence of real inventory. Screenshots do not establish that every visible control is finished.
+No personal browser profile, customer records, production database seed or real order data was used. Photography and avatar requests were replaced with neutral placeholders. The added bottom caption identifies the isolated demo.
 
-## Cover generation
+The layouts and controls are rendered by the actual websites. Visible sync indicators, stock quantities and version labels are interface content, not independently verified service or release claims. Sample products and prices are not offers for sale. Visible screens may contain unfinished or simulated workflows, as explained in the [showcase README](../README.md).
 
-Generated with the built-in image-generation tool using the imagegen skill. The final image is optimized as a JPEG for repository use. No application source or private data was supplied as an image reference.
+## Generated cover
 
-The complete generation prompt is in [cover-prompt.txt](cover-prompt.txt). Image alt text and demo disclosures appear beside the images in the main README. See [rights](../RIGHTS.md) and [notices](../THIRD_PARTY_NOTICES.md).
+The cover was made using the imagegen skill and built-in image-generation tool, then optimized as a JPEG. No application source or private data was supplied as an image reference. The original [generation prompt](cover-prompt.txt) is preserved for provenance; it describes the cover's visual direction, not a released product.
+
+See [rights and credits](../RIGHTS.md) and [third-party notices](../THIRD_PARTY_NOTICES.md). Project enquiries: contact@zynoks.com.

@@ -1,86 +1,65 @@
 # ZYN.STORE + ZynBoard
 
-![ZYN.STORE and ZynBoard product cover with charcoal, lime and violet artwork](assets/zynstore-cover.jpg)
+![ZYN.STORE and ZynBoard showcase cover in charcoal, lime and violet](assets/zynstore-cover.jpg)
 
-An apparel storefront and its connected store management dashboard. ZYN.STORE is for shoppers browsing and ordering clothing. ZynBoard is for authorized operators managing the same catalog and orders.
+**An ecommerce portfolio project by Zynoks: a custom apparel storefront paired with a connected management dashboard.**
 
-[Open the store](https://store.zynoks.com) · [Operator dashboard](https://eboard.zynoks.com) · [Support](mailto:contact@zynoks.com)
+This project shows the kind of shopping experiences and business tools I can build for clients, from the customer-facing design to the dashboard behind it. It is a work-in-progress showcase, not a finished commercial product or a live shopping service offered through this repository.
 
-This is the public product and support repository for both websites. Application source code stays in separate private repositories. This repository does not install or host either application.
+**Want something similar for your business? [Let's discuss your project](mailto:contact@zynoks.com).**
 
-## What you can do
+[View the storefront](https://store.zynoks.com) · [View the dashboard entry page](https://eboard.zynoks.com)
 
-**ZYN.STORE**
+The dashboard requires authorized access. The screenshots below show its interior without needing an account. The hosted sites are project previews; please do not place real orders, send payments or submit personal information while exploring them.
 
-- Browse categories, search products, filter by size and price, and sort listings.
-- View product details, select available sizes and colors, and manage a cart and favorites.
-- Check out with cash on delivery, or bank transfer when configured by the operator. Prices are shown in Moroccan dirhams (MAD).
-- Use account and address screens, and look up order status.
-- Switch between English, French and Arabic, including right-to-left layout, and light or dark appearance. Some text remains in English.
+## One project, two connected experiences
 
-**ZynBoard**
-
-- Create, edit and delete products in the connected catalog.
-- View orders and update their fulfillment status.
-- View order-based revenue summaries, category totals and charts.
-- Search orders and export the displayed order list to CSV.
-
-These capabilities were checked against the current implementation. Public page rendering was checked separately. No real purchase, payment, account creation or production dashboard write was performed during this review.
-
-## See the product
-
-![Actual ZYN.STORE catalog rendered with four labeled sample products and neutral demo image placeholders](assets/storefront-demo.png)
-
-*Actual storefront interface captured in an isolated browser with intercepted API responses. Product names, prices and availability are demonstration data. Third-party photography is omitted.*
-
-![Actual ZynBoard dashboard rendered for Demo Operator with sample products and zero orders](assets/dashboard-demo.png)
-
-*Actual dashboard interface with a synthetic local session and intercepted API responses. Charts and totals are demo values. No production account was accessed. Status indicators and version text visible in the UI are interface labels, not verified service or release claims.*
-
-The cover is AI-generated abstract promotional artwork, not an application screenshot. See [image provenance and prompts](assets/README.md).
-
-## Availability and installation
-
-| Delivery format | Status |
+| ZYN.STORE | ZynBoard |
 | --- | --- |
-| Hosted storefront | Public page available at [store.zynoks.com](https://store.zynoks.com) |
-| Hosted dashboard | Page available at [eboard.zynoks.com](https://eboard.zynoks.com); real use requires an authorized operator account |
-| Android, iOS, Windows, Linux and macOS installers | No verified distributable packages found; no download is offered here |
+| A customer-facing apparel storefront | A separate management interface connected to the same store |
+| Catalog search, categories, filters and sorting | Product creation, editing and catalog management |
+| Product options, cart and favorites | Order views and fulfillment status controls |
+| Checkout, account and order-tracking interfaces | Order-based summaries, charts and CSV export |
+| English, French and Arabic interface support, including right-to-left layout | A dashboard layout with navigation, tables and management screens |
 
-Use the websites in a browser. There is nothing to download from this repository. See the [access and installation guide](docs/installation.md). Desktop Chromium page rendering was checked; mobile layouts exist in the implementation, but a complete browser and device compatibility matrix has not been verified. Native apps, app-store availability and offline operation are not established.
+The project explores both sides of an ecommerce workflow while giving each interface its own visual identity. The storefront uses bold typography, near-black surfaces and lime accents. The dashboard uses a quieter dark palette with violet highlights and compact information layouts. Both include responsive layouts and theme support; some interface text remains in English.
 
-## Get started
+## Storefront showcase
 
-1. Open the [catalog](https://store.zynoks.com/catalog).
-2. Choose an item, review its options and add it to your cart.
-3. Review checkout details, delivery charges and the payment choices currently shown by the store.
-4. Save your order reference privately. Use the [tracking page](https://store.zynoks.com/track-order) or your account to check progress.
+![Actual ZYN.STORE catalog with category filters and sample product cards](assets/storefront-demo.png)
 
-Operators should obtain an account through the store owner, then open ZynBoard. Public screenshots do not provide dashboard access. See the [getting-started guide](docs/getting-started.md).
+The storefront brings together browsing, product selection and checkout in a clothing-store design. This screenshot uses sample products and neutral image placeholders instead of third-party photography.
 
-## Updates, backups and removal
+## Dashboard showcase
 
-Website updates are managed by the operator. Reload the page to load an update; there is no installer or public update feed to configure.
+![Actual ZynBoard dashboard with summary cards, a chart area and sample catalog items](assets/dashboard-demo.png)
 
-A CSV export is an order list, not a complete backup. Browser-local settings and trash are not a server backup. Read [backup and restore](docs/backup-and-restore.md) before clearing browser data or deleting products.
+ZynBoard shows how a matching business dashboard can sit alongside the customer website. Product management and order status changes connect to the store backend. The screenshot uses an isolated demo session, sample products and zero orders; it contains no customer records.
 
-To stop using the product, sign out and close its tabs. Clearing site data removes browser-local information, including cart, favorites and local dashboard preferences; it does not delete server-side orders or an account. Contact contact@zynoks.com for account or data requests.
+Both screenshots show the actual rendered interfaces with demo responses supplied in an isolated browser. The cover is AI-generated abstract artwork. [Media details and generation prompt](assets/README.md).
 
-## Current limitations
+## What this project demonstrates
 
-- Dashboard manual orders currently remain in memory; a success message does not establish a saved server order.
-- Dashboard store details, coupon entries, notification preferences and settings-team entries are browser-local. They do not establish live checkout rules, email delivery or real operator accounts. Team Access is an unfinished interface.
-- Product trash is a browser-local record. Restore recreates a product; it is not a complete recovery of its original identity or order relationships.
-- Stock quantity is represented by a display value derived from availability. Exact inventory counts and low-stock alerts are not verified stock accounting.
-- Analytics summarize recorded orders, including statuses that may be unpaid or canceled. Registered users are not measured site visitors; the displayed conversion ratio is not a traffic analytics metric. Some percentage changes are placeholders.
-- Dashboard support tickets are simulated. The storefront contact form does not establish email delivery. For support use contact@zynoks.com.
-- Bank transfer availability depends on operator configuration. Card payments, automatic payment confirmation, carrier integrations, discount enforcement and email receipts are not verified.
-- Marketing text on the websites does not establish delivery times, return terms, discounts or service guarantees. Confirm applicable terms with the operator before ordering.
+- **Custom interface design:** two distinct visual identities within one connected project.
+- **Frontend development:** responsive storefront and dashboard screens, interactive browsing, forms, tables and charts.
+- **Connected workflows:** shared catalog and order data across separate websites.
+- **Multilingual interface work:** English, French and Arabic support with right-to-left layout in the storefront.
+- **Full-stack implementation:** a Next.js storefront and backend, a React dashboard built with Vite, and PostgreSQL data access through Prisma.
 
-See [FAQ](docs/faq.md), [troubleshooting](docs/troubleshooting.md) and [release status](CHANGELOG.md).
+The implementation uses TypeScript and Tailwind CSS across both interfaces. Application source remains private; this repository contains only the public showcase and media.
 
-## Support and rights
+## Project status
 
-Use GitHub Issues for non-sensitive bugs and suggestions once Issues is enabled. Do not post passwords, payment receipts, order references, private notes, customer records or unredacted screenshots. Send sensitive reports privately to **contact@zynoks.com**. Mail delivery has not been tested as part of this review.
+**Portfolio showcase / work in progress.** The screens and connected functionality demonstrate the project direction, not a production-readiness guarantee.
 
-No open-source license for the private application is granted here. See [rights and credits](RIGHTS.md) and [third-party notices](THIRD_PARTY_NOTICES.md).
+Some dashboard flows are still local prototypes: manual orders stay in memory, several settings use browser storage, and Team Access and support tickets are unfinished or simulated. Inventory counts and analytics also include simplified display logic. Payment processing, email delivery, carrier integration and complete device compatibility have not been verified for production use.
+
+The previews are for viewing the work. They are not an invitation to shop, a self-service demo account, a downloadable application or a ready-to-deploy package.
+
+## Have a project in mind?
+
+If you need a storefront, an admin dashboard or a connected system for your business, email **[contact@zynoks.com](mailto:contact@zynoks.com)**.
+
+Tell me what you sell, who will use the system and the workflows you want to bring together. We can discuss a design and build suited to your business.
+
+[Rights and credits](RIGHTS.md) · [Third-party notices](THIRD_PARTY_NOTICES.md)
